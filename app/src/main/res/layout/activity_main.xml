@@ -7,10 +7,31 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="thailand.mwp.lucky.trafficlearn.MainActivity">
+    tools:context="thailand.mwp.lucky.trafficlearn.MainActivity"
+    android:background="@drawable/bg26">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/title_main"
+        android:id="@+id/textView"
+        android:textSize="@dimen/h1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/a_text" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Me"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/button"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
 </RelativeLayout>
